@@ -147,13 +147,13 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 
 // Hela v3 addresses
 const HELA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
-  multicallAddress: '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
-  quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
-  v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
-  nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
-  tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
-  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
+  v3CoreFactoryAddress: '0xf431f8285D9E62836AaC5dff4f933A6ef1c3C354',
+  multicallAddress: '0x127ED3e7CE46Cd1c4F3B35dC2Cc5cf7167b432aa',
+  quoterAddress: '0x441664c9152b22bAe071517D70659719c28dd693',
+  v3MigratorAddress: '0x96cD9f95B88b44Fede5E12d2cBF2D141541d875D',
+  nonfungiblePositionManagerAddress: '0xb7adf5F05FCBebb096EE5CBe5d97Ef44cba8a1CC',
+  tickLensAddress: '0x9F88cB5819DA7Db1d418da2C3F654BA3EAE083D0',
+  swapRouter02Address: '0x01cE5A03a778539f10494a2318D524c459252B2b'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
