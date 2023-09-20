@@ -146,6 +146,7 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
 }
 
+// Hela v3 addresses
 const BASE_HELA_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xf431f8285D9E62836AaC5dff4f933A6ef1c3C354',
   multicallAddress: '0x127ED3e7CE46Cd1c4F3B35dC2Cc5cf7167b432aa',
