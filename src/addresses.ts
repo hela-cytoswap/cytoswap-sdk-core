@@ -27,7 +27,8 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
   ChainId.ARBITRUM_ONE,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
-  ChainId.SEPOLIA
+  ChainId.SEPOLIA,
+  ChainId.HELA
 ])
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
@@ -150,9 +151,9 @@ const BASE_HELA_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x127ED3e7CE46Cd1c4F3B35dC2Cc5cf7167b432aa',
   quoterAddress: '0x441664c9152b22bAe071517D70659719c28dd693',
   v3MigratorAddress: '0x96cD9f95B88b44Fede5E12d2cBF2D141541d875D',
-  nonfungiblePositionManagerAddress: '0x9e60c5D36153D98866A26F7418eB687F30a92781',
+  nonfungiblePositionManagerAddress: '0xb7adf5F05FCBebb096EE5CBe5d97Ef44cba8a1CC',
   tickLensAddress: '0x9F88cB5819DA7Db1d418da2C3F654BA3EAE083D0',
-  swapRouter02Address: '0x54126a41630F2636f088450DC2F6821CA5449eFF'
+  swapRouter02Address: '0x01cE5A03a778539f10494a2318D524c459252B2b'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
