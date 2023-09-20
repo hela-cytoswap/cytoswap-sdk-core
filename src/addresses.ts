@@ -147,7 +147,7 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 // Hela v3 addresses
-const HELA_ADDRESSES: ChainAddresses = {
+const BASE_HELA_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xf431f8285D9E62836AaC5dff4f933A6ef1c3C354',
   multicallAddress: '0x127ED3e7CE46Cd1c4F3B35dC2Cc5cf7167b432aa',
   quoterAddress: '0x441664c9152b22bAe071517D70659719c28dd693',
@@ -173,7 +173,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
-  [ChainId.HELA]: HELA_ADDRESSES
+  [ChainId.HELA]: BASE_HELA_ADDRESSES
 }
 
 /* V3 Contract Addresses */
