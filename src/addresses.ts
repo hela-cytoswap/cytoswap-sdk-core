@@ -143,7 +143,7 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x3efe5d02a04b7351D671Db7008ec6eBA9AD9e3aE',
   nonfungiblePositionManagerAddress: '0x3c61369ef0D1D2AFa70d8feC2F31C5D6Ce134F30',
   tickLensAddress: '0x1acB873Ee909D0c98adB18e4474943249F931b92',
-  swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
+  swapRouter02Address: '0x54126a41630F2636f088450DC2F6821CA5449eFF'
 }
 
 // Hela v3 addresses
