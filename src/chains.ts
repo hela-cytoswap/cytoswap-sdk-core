@@ -48,5 +48,5 @@ export enum NativeCurrencyName {
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
   AVAX = 'AVAX',
-  HLUSD = 'HLUSD'
+  HLUSD = "HLUSD"
 }
