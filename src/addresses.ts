@@ -154,7 +154,7 @@ const BASE_HELA_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x96cD9f95B88b44Fede5E12d2cBF2D141541d875D',
   nonfungiblePositionManagerAddress: '0xb7adf5F05FCBebb096EE5CBe5d97Ef44cba8a1CC',
   tickLensAddress: '0x9F88cB5819DA7Db1d418da2C3F654BA3EAE083D0',
-  swapRouter02Address: '0x01cE5A03a778539f10494a2318D524c459252B2b'
+  swapRouter02Address: '0x54126a41630F2636f088450DC2F6821CA5449eFF'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -274,8 +274,9 @@ export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = SUPPORTED_CHAINS.redu
 }, {})
 
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
-  if (chainId == ChainId.BNB) {
-    return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
+  if (chainId == ChainId.BNB || chainId == ChainId.HELA) {
+    return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address;
   }
-  return '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
+
+  return '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
 }
