@@ -27,11 +27,10 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
   ChainId.ARBITRUM_ONE,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
-  ChainId.SEPOLIA,
-  ChainId.HELA
+  ChainId.SEPOLIA
 ])
 
-export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
+export const CYTOSWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
 export const V2_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
@@ -148,13 +147,13 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 
 // Hela v3 addresses
 const BASE_HELA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xF92E44305e02Df85FAfEff345B186F95A0ffF740',
-  multicallAddress: '0x783a3A33138Ccb27EC145d130Be0b6A76a4f0982',
-  quoterAddress: '0x11d2fBFA313FD4a2C5A0f125cE29d2C81d2245ef',
-  v3MigratorAddress: '0x80d07891F8EB1b35c5c10595FC3bF3B23cB5BE52',
-  nonfungiblePositionManagerAddress: '0x975a51D7701A1A0b16d25010bA128B8a485C7160',
-  tickLensAddress: '0xc43B2C851388004275C456BEB703c0351C27DE68',
-  swapRouter02Address: '0xDD52c29326af4b6C2979033914B8E769050FAE2c'
+  v3CoreFactoryAddress: '0xc5a025AB1b7a754397273e1EED1fB1de5B5fAb6b',
+  multicallAddress: '0x0D0f4C3c0058F92eF7d576e2677D7bdE0BaB89FB',
+  quoterAddress: '0x113bee4e2322e8EDdC08ab2cDCc5f39D2402fb02',
+  v3MigratorAddress: '0x1B6CD8296FbEB3DA6Af4391F1D7b6cF6A7b7c888',
+  nonfungiblePositionManagerAddress: '0x8c7e5e156741fa795ba0f480CF61552a1773BFCc',
+  tickLensAddress: '0xb33265a5980A4CCf5Db57E6bA285Bb715ce59173',
+  swapRouter02Address: '0xeeebfe3B19C2B1d9D90518873570BDE3A6fA2EBF'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {

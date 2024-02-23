@@ -1,4 +1,4 @@
-# Uniswap SDK Core
+# Cytoswap SDK Core
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.snapresearch.io/hela/uniswap-sdk-core.git
+git remote add origin https://gitlab.snapresearch.io/swapnity/cytoswap-sdk-core.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.snapresearch.io/hela/uniswap-sdk-core/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.snapresearch.io/swapnity/cytoswap-sdk-core/-/settings/integrations)
 
 ## Collaborate with your team
 
