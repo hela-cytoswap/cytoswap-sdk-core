@@ -83,6 +83,17 @@ const BNB_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2'
 }
 
+// BNB Testnet v3 addresses
+const BNB_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xf591Ee063198fb5D3D41Df8A8bE0F772b303B0Ec',
+  multicallAddress: '0x35f53f03E3Fe1A5bD0eFeFe4362a358F0A6889b9',
+  quoterAddress: '0xD363d976603CF256531200c3EC54C343ffa63CB7',
+  v3MigratorAddress: '0x915F4e3e9856859eAC8C74cf20668Dc2f3AC3CD8',
+  nonfungiblePositionManagerAddress: '0x488EF65238095e4Ee839DFd349b81Ec8252Ad833',
+  tickLensAddress: '0x04D1Fb1D69CCba23C8B93Fa7DcE30664CD302a38',
+  swapRouter02Address: '0xd384eB85f61B73CA22Bc938f13F1911469Ef6215'
+}
+
 // optimism goerli addresses
 const OPTIMISM_GOERLI_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xB656dA17129e7EB733A557f4EBc57B76CFbB5d10',
@@ -147,13 +158,13 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 
 // Hela v3 addresses
 const BASE_HELA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xc5a025AB1b7a754397273e1EED1fB1de5B5fAb6b',
-  multicallAddress: '0x0D0f4C3c0058F92eF7d576e2677D7bdE0BaB89FB',
-  quoterAddress: '0x113bee4e2322e8EDdC08ab2cDCc5f39D2402fb02',
-  v3MigratorAddress: '0x1B6CD8296FbEB3DA6Af4391F1D7b6cF6A7b7c888',
-  nonfungiblePositionManagerAddress: '0x8c7e5e156741fa795ba0f480CF61552a1773BFCc',
-  tickLensAddress: '0xb33265a5980A4CCf5Db57E6bA285Bb715ce59173',
-  swapRouter02Address: '0xeeebfe3B19C2B1d9D90518873570BDE3A6fA2EBF'
+  v3CoreFactoryAddress: '0x83334Bf03fe52c10A0838066F4a1B9520AF3D11c',
+  multicallAddress: '0x508Ad6B7f23B9b7909A28a991178A8f034524C49',
+  quoterAddress: '0x4e449074561C4eeaD8bF3a84255db3220e940787',
+  v3MigratorAddress: '0xD075CbADc32bfe99c579b8888A7F1eAb0B62Ec2B',
+  nonfungiblePositionManagerAddress: '0x7f34C60A76BC8CC4FBc138AA8fF63Ea473394701',
+  tickLensAddress: '0x061Eb84d148D384ADf8edf26DD3d569bEA365715',
+  swapRouter02Address: '0xD5559c4020DA25D6eC1955Aa7682712811A0b5E9'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -166,6 +177,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.CELO]: CELO_ADDRESSES,
   [ChainId.CELO_ALFAJORES]: CELO_ADDRESSES,
   [ChainId.BNB]: BNB_ADDRESSES,
+  [ChainId.BNB_TESTNET]: BNB_TESTNET_ADDRESSES,
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
@@ -273,7 +285,7 @@ export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = SUPPORTED_CHAINS.redu
 }, {})
 
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
-  if (chainId == ChainId.BNB || chainId == ChainId.HELA) {
+  if (chainId == ChainId.BNB || chainId == ChainId.BNB_TESTNET || chainId == ChainId.HELA) {
     return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address;
   }
 
